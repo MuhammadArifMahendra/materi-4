@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\http\Controllers\HomeController;
+use App\http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,41 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/informatika', function(){
-	return view("informatika");
-});
+Route::get('index', [HomeController::class, 'showindex']);
+Route::get('log', [AuthController::class, 'showlog']);
 
-Route::get('/login', function(){
-	return view("login");
-});
-
-Route::get('/elektro', function(){
-	return view("elektro");
-});
-
-Route::get('/sipil', function(){
-	return view("sipil");
-});
-
-Route::get('template',function(){
-	return view('template.base');
-});
-Route::get('index',function(){
-	return view('index');
-});
-
-Route::get('kategori',function(){
-	return view('kategori');
-});
-
-Route::get('log',function(){
-	return view('log');
-});
-
-Route::get('register',function(){
-	return view('register');
-});
-
-Route::get('keuangan',function(){
-	return view('keuangan');
-});
