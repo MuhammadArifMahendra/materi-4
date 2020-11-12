@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\HomeController;
 use App\http\Controllers\AuthController;
+use App\http\Controllers\ProdukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,9 @@ Route::get('/', function () {
 });
 
 Route::get('index', [HomeController::class, 'showindex']);
+Route::get('kategori', [AuthController::class, 'showKategori']);
 Route::get('log', [AuthController::class, 'showlog']);
 
+Route::get('produk', [ProdukController::class, 'index']);
+Route::get('produk/create', [ProdukController::class, 'create']);
+Route::post('produk', [ProdukController::class, 'store']);

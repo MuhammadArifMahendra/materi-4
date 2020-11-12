@@ -14,4 +14,8 @@ class HomeController extends Controller{
 		return view('log');
 	}
 
+	function showproduk(){
+		return view('produk');
+	}
+
 }
