@@ -10316,18 +10316,15 @@ body {
                             <a class="nav-link collapsed" href="data" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             </a>
                             
-                            <a class="nav-link" href="keuangan">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Keuangan Admin
                             </a>
-                            <a class="nav-link" href="kategori">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Kategori
                             </a>
-                            <a class="nav-link" href="log">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Log Out
-                            </a>
+                           
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
