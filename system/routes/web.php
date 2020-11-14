@@ -23,6 +23,15 @@ Route::get('/', function () {
 Route::get('index', [HomeController::class, 'showindex']);
 Route::get('kategori', [AuthController::class, 'showKategori']);
 Route::get('log', [AuthController::class, 'showlog']);
+Route::get('keuangan', [AuthController::class, 'showkeuangan']);
+
+Route::get('register',function(){
+	return view('register');
+});
+Route::get('keuangan',function(){
+	return view('keuangan');
+});
+
 
 Route::get('produk', [ProdukController::class, 'index']);
 Route::get('produk/create', [ProdukController::class, 'create']);
